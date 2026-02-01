@@ -1,0 +1,11 @@
+{
+  "name": "mime-voice-automation",
+  "version": "1.0.0",
+  "description": "Voice-controlled browser automation using Automa + OpenAI Whisper",
+  "scripts": {
+    "start": "start-all.bat"
+  },
+  "keywords": ["browser-automation", "voice-control", "automa", "whisper", "ai"],
+  "author": "Your Name",
+  "license": "MIT"
+}

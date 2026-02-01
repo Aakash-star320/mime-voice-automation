@@ -1,0 +1,41 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+*.pyc
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sql
+
+# Uploads
+uploads/
+*.wav
+*.webm
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+*.log
