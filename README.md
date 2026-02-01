@@ -250,6 +250,29 @@ python mimeServer.py
 - Verify credentials in `backend/express/.env`
 - Ensure database exists: `createdb mime_db`
 
+**Issue:** "Speech recognition is slow"  
+**Solution:** 
+- Whisper performance depends on your hardware
+- **With GPU:** ~2-5 seconds for transcription
+- **Without GPU (CPU only):** ~20-30 seconds for transcription
+- Consider using a smaller Whisper model (edit `backend/fastapi/mimeServer.py`)
+  - ⚠️ **Note:** Smaller models are faster but less accurate
+- GPU acceleration significantly improves speed without sacrificing accuracy
+
+## ⚡ Performance Notes
+
+**Speech Recognition Speed:**
+- Mime uses OpenAI Whisper for speech-to-text conversion
+- **GPU-enabled systems:** Fast transcription (~2-5 seconds)
+- **CPU-only systems:** Slower transcription (~20-30 seconds)
+- The demo video shows CPU performance - GPU systems will be much faster
+
+**Recommendations:**
+- For best experience, use a system with a dedicated GPU
+- Alternatively, use a smaller Whisper model for faster CPU performance (may reduce accuracy)
+- Speech recognition runs locally for privacy, so speed depends on your hardware
+- **Tradeoff:** Smaller models = faster speed but lower transcription accuracy
+
 ## 🤝 Contributing
 
 Contributions welcome! Please:
